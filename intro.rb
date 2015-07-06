@@ -1,3 +1,7 @@
+## TO RUN RUBY IN CONSOLE ==> command line type in irb
+## TO RUN RUBY FROM A FILE (for example this file) GO TO 
+## DIRECTORY FILE IS IN THEN RUN ==> ruby file_name.rb
+
 ## RUBY BASICS
 # print "Hello Class!"
 # puts "Hello Class!"
@@ -85,7 +89,55 @@
 
 ## LOOPS
 
+# for n in 1..1000 do
+#    if n%2 == 0
+#    	puts n
+# 	end
+# end
 
+# for n in 1..1000 do
+#    puts n if n.even?
+# end
+
+# 9.times do |x|
+#   puts "HELLO #{x}"
+# end
+
+# x = 100
+# while x > 0            
+#    x -= 1
+#    puts "This loop will run #{x} more times"
+# end
+
+# i = 0
+# num = 10
+# until i > num
+#   puts "The value of i is now #{i}"
+#   i += 1
+# end
+
+## PALINDROME CHECKER
+def palindrome_checker
+	puts "Please put in a word to check if it is a palindrome:"
+	string = gets.chomp
+	string_reverse = string.reverse 
+	for i in 0..string.length do
+		if string[i] != string_reverse[i]
+			return palindrome_checker
+		else 
+			return true
+		end
+	end
+end
+puts palindrome_checker
+
+
+puts "Please enter something"
+input = gets.chomp
+while input != input.reverse
+	puts "please enter something again"
+	input = gets
+end
 
 
 
