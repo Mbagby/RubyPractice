@@ -2,9 +2,16 @@
 ## TO RUN RUBY FROM A FILE (for example this file) GO TO 
 ## DIRECTORY FILE IS IN THEN RUN ==> ruby file_name.rb
 
+## Ruby = JavaScript
+##puts = console.log
+##print = console.log
+##return = return
+
 ## RUBY BASICS
 # print "Hello Class!"
 # puts "Hello Class!"
+
+## def is how you make a function/method must have "end"
 
 # def min_in_decade year
 # 	return 60*24*365.25*year
@@ -117,28 +124,42 @@
 # end
 
 ## PALINDROME CHECKER
-def palindrome_checker
-	puts "Please put in a word to check if it is a palindrome:"
-	string = gets.chomp
-	string_reverse = string.reverse 
-	for i in 0..string.length do
-		if string[i] != string_reverse[i]
-			return palindrome_checker
-		else 
-			return true
-		end
-	end
-end
-puts palindrome_checker
+# def palindrome_checker
+# 	puts "Please put in a word to check if it is a palindrome:"
+# 	string = gets.chomp
+# 	string_reverse = string.reverse 
+# 	for i in 0..string.length do
+# 		if string[i] != string_reverse[i]
+# 			return palindrome_checker
+# 		else 
+# 			return true
+# 		end
+# 	end
+# end
+# puts palindrome_checker
 
 
-puts "Please enter something"
-input = gets.chomp
-while input != input.reverse
-	puts "please enter something again"
-	input = gets
-end
+# puts "Please enter something"
+# input = gets.chomp
+# while input != input.reverse
+# 	puts "please enter something again"
+# 	input = gets.chomp
+# end
+# puts "#{input} is a palindrome!"
 
+##Iterators
+
+# people = ["Elie", "Rosa", "Tim", "Zubair"]
+# people.each do |person|
+#     puts person
+# end
+
+##Methods
+
+# def method_name(var1, var2)
+#    var1 + var2
+# end
+# puts method_name(2,3)
 
 
 
