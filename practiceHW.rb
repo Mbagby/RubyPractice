@@ -46,24 +46,17 @@
 # for something in 1..rows do
 
 
-# puts "What character so you want to make the pyramid out of?"
-# char = gets.chomp
-# puts "How many rows of #{char} do you want?"
-# rows = gets.chomp.to_i
+puts "What character so you want to make the pyramid out of?"
+char = gets.chomp
+puts "How many rows of #{char} do you want?"
+rows = gets.chomp.to_i
+count = 1
+
+rows.times do
+	puts (char * count).center(9)
+	count +=2
+end
 
 # # Multiplication Table
 
-def anagram?(first_words, second_words)
-  # instead of .split(''), can use chars since Ruby 1.9.2
-  # first_words = first_words.split('').sort
-  first_words = first_words.chars.sort
-  second_words = second_words.chars.sort
-  puts first_words
-  first_words == second_words ? 1 : 0
-end
-
-puts anagram?("cinema", "iceman")
-puts anagram?("host", "shot")
-puts anagram?("aba", "bab")
-puts anagram?("train", "rain")
 
