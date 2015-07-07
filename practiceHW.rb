@@ -43,9 +43,6 @@
 
 # # Simple Ascii Art
 
-# for something in 1..rows do
-
-
 puts "What character so you want to make the pyramid out of?"
 char = gets.chomp
 puts "How many rows of #{char} do you want?"
@@ -58,5 +55,18 @@ rows.times do
 end
 
 # # Multiplication Table
+
+## reverse in place
+
+def rev_in_place
+puts "Enter your string:"
+str = gets.to_s.chomp
+mid = str.length/2
+(0...mid).each do |index|
+	str[index], str[-index-1] = str [-index-1], str[index]
+	end
+		puts str
+end
+rev_in_place
 
 
